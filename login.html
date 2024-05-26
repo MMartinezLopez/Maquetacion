@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Teko:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de sesión</title>
+
+    <link href="login.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <main id="login">
+      <img class="logo" src="./assets/logo.png" alt="Logo Discolmedica" />
+
+      <div class="login">
+        <h2 class="subtitle">Iniciar sesión</h2>
+        <input id="user" class="input-user" type="text" placeholder="Usuario" />
+        <input
+          id="password"
+          class="input-user"
+          type="password"
+          placeholder="Contraseña"
+        />
+        <a href="" target="_blank">Olvidó su contraseña</a>
+      </div>
+
+      <a class="button" href="landing.html">Entrar</a>
+    </main>
+  </body>
+
+  <script>
+    const login = () => {
+      var user = document.getElementById("user").value;
+      var password = document.getElementById("password").value;
+      if (user == "" || password == "") {
+        alert("No puede quedar campo en blanco");
+      } else {
+        if (user === "usuario" && password === "12345") {
+          alert("Ingresando");
+          console.log(user+" / "+password)
+        } else {
+          alert("No tienes acceso");
+        }
+      }
+    };
+  </script>
+</html>

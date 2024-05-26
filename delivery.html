@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/f077be3e7d.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Teko:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link href="delivery.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inicio</title>
+      </head>
+      <body>
+        <section id="container">
+          <header id="header">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <img src="./assets/logo.png" alt="logo" id="logo"/>
+            <span id="page-title">ENTREGAS</span>
+          </header>
+          <nav id="nav">
+            <div id="navlinks">
+              <a class="navlink" href="/landing.html">productos</a>
+              <a class="navlink" href="/delivery.html">entregas</a>
+            </div>
+            <a class="navlink" href="/login.html">Salir</a>
+          </nav>
+          <main id="main">
+            <div id="search">
+              <input class="input-search" placeholder="Código de entrega" />
+              <button>buscar</button>
+            </div>
+            <div id="product-info">INGRESE UN CÓDIGO DE ENTREGA O REMISIÓN</div>
+            <table id="products">
+                <thead>
+                    <tr>
+                        <th>Número de remisión</th>
+                        <th>Cliente</th>
+                        <th>Dirección</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345</td>
+                        <td>Empresa XYZ</td>
+                        <td>Calle Falsa 123</td>
+                        <td>
+                            <select>
+                                <option value="entregado">Entregado</option>
+                                <option value="en_transito">En tránsito</option>
+                                <option value="en_preparacion">En preparación</option>
+                                <option value="preparado">Preparado</option>
+                            </select>
+                        </td>
+                        <td><button class="btn-ver-documento">Ver Documento</button></td>
+                    </tr>
+                    <tr>
+                        <td>12346</td>
+                        <td>Empresa ABC</td>
+                        <td>Avenida Siempre Viva 742</td>
+                        <td>
+                            <select>
+                                <option value="entregado">Entregado</option>
+                                <option value="en_transito">En tránsito</option>
+                                <option value="en_preparacion">En preparación</option>
+                                <option value="preparado">Preparado</option>
+                            </select>
+                        </td>
+                        <td><button class="btn-ver-documento">Ver Documento</button></td>
+                    </tr>
+                    <tr>
+                        <td>12347</td>
+                        <td>Empresa DEF</td>
+                        <td>Calle de la Amargura 666</td>
+                        <td>
+                            <select>
+                                <option value="entregado">Entregado</option>
+                                <option value="en_transito">En tránsito</option>
+                                <option value="en_preparacion">En preparación</option>
+                                <option value="preparado">Preparado</option>
+                            </select>
+                        </td>
+                        <td><button class="btn-ver-documento">Ver Documento</button></td>
+                    </tr>
+                    <tr>
+                        <td>12348</td>
+                        <td>Empresa GHI</td>
+                        <td>Calle Mayor 1</td>
+                        <td>
+                            <select>
+                                <option value="entregado">Entregado</option>
+                                <option value="en_transito">En tránsito</option>
+                                <option value="en_preparacion">En preparación</option>
+                                <option value="preparado">Preparado</option>
+                            </select>
+                        </td>
+                        <td><button class="btn-ver-documento">Ver Documento</button></td>
+                    </tr>
+                    <tr>
+                        <td>12349</td>
+                        <td>Empresa JKL</td>
+                        <td>Calle del Pez 22</td>
+                        <td>
+                            <select>
+                                <option value="entregado">Entregado</option>
+                                <option value="en_transito">En tránsito</option>
+                                <option value="en_preparacion">En preparación</option>
+                                <option value="preparado">Preparado</option>
+                            </select>
+                        </td>
+                        <td><button class="btn-ver-documento">Ver Documento</button></td>
+                    </tr>
+                </tbody>
+            </table>
+          </main>
+          <footer>Discolmedica SA - 2024 - © Todos los derechos reservados </footer>
+        </section>
+      </body>
+</html>
